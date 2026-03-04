@@ -71,6 +71,8 @@ metrics = {
   "customers_rows_dropped": customer_rows_dropped,
   "customers_data_types": customers.dtypes.astype(str).to_dict() } 
 
+#create dataframe from metrics list
 metrics_df = pd.DataFrame.from_dict(metrics, orient="index", columns=["value"])
 
+#create csv fle called 'metrics.csv' from dataframe
 metrics_df.to_csv("metrics.csv")
