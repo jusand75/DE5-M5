@@ -34,5 +34,5 @@ customers = pd.read_csv("data/03_Library SystemCustomers.csv")
 customers_cleaned = customers.dropna()
 
 #create cleaned csv files
-books.to_csv("books_cleaned.csv")
-customers_cleaned.to_csv("customers_cleaned.csv")
+books.to_csv("data/books_cleaned.csv")
+customers_cleaned.to_csv("data/customers_cleaned.csv")
