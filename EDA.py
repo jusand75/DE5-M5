@@ -27,4 +27,4 @@ books[date_cols] = books[date_cols].apply(pd.to_datetime, dayfirst=True, errors=
 #add column to calculate days on loan
 books["Days on Loan"] = (books["Book Returned"] - books["Book checkout"]).dt.days
 
-print(books.head())
+print(books.head(n=20))
