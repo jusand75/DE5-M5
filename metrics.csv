@@ -1,9 +1,9 @@
 ,value
-books_initial_rows,114
-books_rows_after_drop,20
-books_rows_dropped,94
-books_data_types,"{'Id': 'float64', 'Books': 'str', 'Book checkout': 'datetime64[us]', 'Book Returned': 'datetime64[us]', 'Days allowed to borrow': 'int64', 'Customer ID': 'float64', 'Days on Loan': 'float64'}"
-customers_initial_rows,9
-customers_rows_after_drop,8
-customers_rows_dropped,1
-customers_data_types,"{'Customer ID': 'float64', 'Customer Name': 'str'}"
+Books: Initial Row Count,114
+Books: Row count after drop,20
+Books: Rows Dropped,94
+Books: Data Types,"{'Id': 'float64', 'Books': 'str', 'Book checkout': 'datetime64[us]', 'Book Returned': 'datetime64[us]', 'Days allowed to borrow': 'int64', 'Customer ID': 'float64', 'Days on Loan': 'float64'}"
+Customers: Initial Row Count,9
+Customers: Row count after drop,8
+Customers: Rows Dropped,1
+Customers: Data Types,"{'Customer ID': 'float64', 'Customer Name': 'str'}"

@@ -60,16 +60,16 @@ customer_rows_dropped = initial_customer_rows - customer_rows_after_drop #calcul
 
 #----------------------------- # Collect metrics # -----------------------------
 metrics = {
-  "books_initial_rows": initial_book_rows,
-  "books_rows_after_drop": books_rows_after_drop,
-  "books_rows_dropped": books_rows_dropped,
-  "books_data_types": books.dtypes.astype(str).to_dict(),
+  "Books: Initial Row Count": initial_book_rows,
+  "Books: Row count after drop": books_rows_after_drop,
+  "Books: Rows Dropped": books_rows_dropped,
+  "Books: Data Types": books.dtypes.astype(str).to_dict(),
   #"books_unique": books.
 
-  "customers_initial_rows": initial_customer_rows,
-  "customers_rows_after_drop": customer_rows_after_drop,
-  "customers_rows_dropped": customer_rows_dropped,
-  "customers_data_types": customers.dtypes.astype(str).to_dict() } 
+  "Customers: Initial Row Count": initial_customer_rows,
+  "Customers: Row count after drop": customer_rows_after_drop,
+  "Customers: Rows Dropped": customer_rows_dropped,
+  "Customers: Data Types": customers.dtypes.astype(str).to_dict() } 
 
 #create dataframe from metrics list
 metrics_df = pd.DataFrame.from_dict(metrics, orient="index", columns=["value"])
